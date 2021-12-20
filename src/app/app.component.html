@@ -1,6 +1,7 @@
-<agm-map [zoom]="14" [latitude]="destination.lat" [longitude]="destination.lng">
-  <agm-marker [latitude]="origin.lat" [longitude]="origin.lng"></agm-marker>
+<agm-map [latitude]="destination.lat" [longitude]="destination.lng" [fitBounds]="true">
+  <agm-marker [agmFitBounds]="true" [latitude]="origin.lat" [longitude]="origin.lng"></agm-marker>
   <agm-marker
+  [agmFitBounds]="true"
     [latitude]="destination.lat"
     [longitude]="destination.lng"
   ></agm-marker>
